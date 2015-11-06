@@ -1,8 +1,13 @@
 #include "Ferrari.h"
 
-Ferrari::Ferrari()
+Ferrari::Ferrari(float velocidadeTurbo, bool motorTurbo, bool conectado)
+:Carro(velocidade, modelo, numAtualPassageiro)
 {
-    this-> modelo = "";
+    if( velocidadeTurbo > 0 )
+        this-> velocidadeTurbo = velocidadeTurbo;
+    else
+        velocidadeTurbo = 0;
+
 
     //ctor
 }
